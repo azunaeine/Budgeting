@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+       <meta charset="utf-8"/>
+       <title>Budget App</title>
+       <link type="text/css" rel="styleSheet" href="style.css"/>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sub-container">
+                <nav id="nav">
+                    
+                    <div class="header">
+                        
+                        <div class="menu-icon">
+                            <label for="check" class="checkBtn">
+                            <i class="fa fa-bars menu" aria-hidden="true"></i>
+                            </label>
+                            <p id="logo"><a href="#"><img src="svg/logo.png"></a></p>
+                        </div>
+                        <div class="image">
+                            <img src="images/austin.jpg" alt="picture"/>
+                            <div class="info">
+                                <h3>James</h3>
+                                <p>Accountant</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <ul> 
+                            <li class="active"><a href="#"><img src="svg/Group 11.svg"/></a></li>
+                            <li><a href="#"><img src="svg/Group 8.svg"/></a></li>
+                            <li><a href="#"><img src="svg/Group 10.svg"/></a></li>
+                            <li><a href="#"><img src="svg/Group 12.svg"/></a></li>
+                            <li><a href="#"><img src="svg/Group 10 (1).svg"/> </a></li>
+                            <li><a href="#"><img src="svg/Group 13.svg"/></a></li>
+                    </ul>
+                 
+                </nav>
+                <div class="main-content">
+                    <div class="sections">
+                        <div class="section-one">
+                        <img src="svg/Group 28.svg"/>
+                        <div>
+                            <p class="acct-bal">Account Balance</p>
+                            <p>$<span class="total-balance">400</span></p>
+                        </div>
+                        </div>
+                        <div class="budget-container">
+                            <div class="budget-sub-container">
+                            <h3>Calculate your Budget</h3>
+                            <div class="budget-inputs">
+                                   <form>
+                                        <p>
+                                            <label>Enter Funds</label><br>
+                                            <input type="number" class="balance" placeholder="$0.00"/>
+                                        </p>
+                                        <p>
+                                            <label>Enter Expense Name</label><br>
+                                            <input type="text" class="expense-name" placeholder="Name" required/>
+                                        </p>
+                                        <p>
+                                            <label>Enter Expense Amount</label><br>
+                                            <input type="number" class="expense-amt" placeholder="$0.00" required/>
+                                        </p>
+                                        <p class="add-expense">
+                                            <button class="add-btn" type="submit">Calculate</button>
+                                        </p>
+                                    </form>
+                            </div>
+                            </div>
+                            <div class="expense-container">
+                            <h3>Transaction History</h3>
+                            <div class="expense-sub-container">
+
+                                <div class="main-expense">
+                                        <div>
+                                            <h4>Breakfast</h4>
+                                            <p>3/12/2022, 6:12:06 AM</p>
+                                        </div>
+                                        <h4 class="amt"><span style="color: red">-</span>$<span>100</span></h4>
+                                </div>
+                                <div class="main-expense">
+                                    <div>
+                                        <h4>Funds Added</h4>
+                                        <p>3/12/2022, 6:12:06 AM</p>
+                                    </div>
+                                    <h4 class="amt"><span style="color: #70C27D">+</span>$<span>500</span></h4>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <img src="images/phone.jpg" alt="phone"/>
+                            <div>
+                                <h4>Business News: The Stock Market</h4>
+                                <p class="news-info">Western allies plan to remove Russia's status as an equal trade partner. Western allies plan to remove Russia's status as an equal trade partner.</p>
+                                <p><button>Read More</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accounts">
+                        <h3>Bank Accounts</h3>
+                        <div class="account-overview">
+                            <h4>Account Overview</h4>
+                            <h5>
+                                <p class="debit">Debit Card</p>
+                                <p class="total">$ 20,340</p>
+                            </h5>
+                            <h5>
+                                <p class="credit">Credit Card</p>
+                                <p class="total">$ 1,000</p>
+                            </h5>
+                            <div>
+                                <p class="card-type">Debit Card</p>
+                                <p class="card"><img src="svg/Group 48 (1).svg"/></p>
+                            </div>
+                            <div>
+                                <p class="card-type">Credit Card</p>
+                                <p class="card"><img src="svg/Group 37 (1).svg"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
